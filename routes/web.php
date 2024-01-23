@@ -13,7 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    $dati = config("data");
-    return view('home', $dati);
-})->name("home");
+Route::get('/', [\App\Http\Controllers\HomePage::class, 'index'])->name('home');
