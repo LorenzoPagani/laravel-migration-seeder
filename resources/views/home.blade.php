@@ -3,9 +3,9 @@
 @section('content')
     <div class="container-lg">
         <div class="row">
-            <div class="col-12 d-flex flex-wrap">
+            <div class="col-12 d-flex flex-wrap justify-content-between">
                 @foreach ($trains as $train)
-                    <div class="card text-white" style="width:18rem; background-color:rgb(73, 0, 0)">
+                    <div class="card text-white m-2" style="width:18rem; background-color:rgb(73, 0, 0)">
                         <div class="card-body">
                             <h5 class="card-title"> {{ $train->azienda }}</h5>
                             <h6 class="card-subtitle mb-2 text-white">{{ $train->codice_treno }}</h6>
